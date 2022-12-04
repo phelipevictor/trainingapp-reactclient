@@ -1,17 +1,20 @@
-import axios from 'axios'
+import api from '../service/api.service'
 import React, { useState, useEffect } from 'react'
 
 export const ExercisesList = () => {
     const [exercises, setExercises] = useState([])
 
     useEffect(() => {
-        axios.get('http://localhost:5005/homepage/Exercises').then((result) => {
-            setExercises(result.data)
+        api.getExercises('Deadlift').then(result => {
+            setExercises(result)
         })
     }, [])
-    return <div>
-    {exercises.map((exercise) => (
+    return (
+    <div>
+    <h1>Exercises List</h1>
+        {exercises.map((exercise) => (
         <h1 key={exercise._id}> {exercise.name}</h1>
-    ))}
-    </div>
+            ))}
+        </div>
+    )
 }
