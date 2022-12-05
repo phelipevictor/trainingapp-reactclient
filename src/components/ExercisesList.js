@@ -4,6 +4,20 @@ import React, { useState, useEffect } from 'react'
 export const ExercisesList = () => {
     const [exercises, setExercises] = useState([])
 
+
+//const addOneExercise
+
+
+
+//const getAllExercises
+
+
+//const deleteOneExercise
+
+
+//const updateOneExercise
+
+
     useEffect(() => {
         api.getExercises('Deadlift').then(result => {
             setExercises(result)
