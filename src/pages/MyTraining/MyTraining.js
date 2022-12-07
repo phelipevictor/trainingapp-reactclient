@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from '../components/Navbar/Navbar'
 
+import '../MyTraining/MyTraining.css'
+
 const Mytraining = () => {
     return (
     <div>
