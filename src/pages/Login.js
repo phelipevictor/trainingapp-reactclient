@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar/Navbar'
-import Login from '../components/FormLogin/Login'
+import FormLogin from '../components/FormLogin/FormLogin'
 
 const Login = () => {
     return (

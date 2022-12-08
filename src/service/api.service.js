@@ -47,18 +47,18 @@ class Api {
         }
     }
 
-    getExercises = async (exerciseName) => {
+    getExercise = async (exerciseId) => {
         try {
-            const { data } = await this.api.get(`/exercises/${ExerciseName}`)
+            const { data } = await this.api.get(`/exercises`) //exerciseId?
             return data
         } catch (error) {
             console.log(error)
         }
     }
 
-    getTrainings = async (trainingName) => {
+    getTraining = async (trainingId) => {
         try {
-            const { data } = await this.api.get(`/mytraining`)
+            const { data } = await this.api.get(`/training`)
             return data
         } catch (error) {
             console.log(error)

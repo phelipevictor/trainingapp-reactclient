@@ -1,9 +1,10 @@
 import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
+import ExercisesList from '../../components/ExercisesList'
 
-import '../Exercises/Exercises.css'
+import './Exercise.css'
 
-const Exercises = () => {
+const Exercise = () => {
     return (
     <div>
     <Navbar />
@@ -18,4 +19,4 @@ const Exercises = () => {
  )
 }
 
-export default Exercises
+export default Exercise

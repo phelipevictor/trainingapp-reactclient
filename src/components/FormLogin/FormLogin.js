@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import api from '../../service/api.service'
 import { useNavigate } from 'react-router-dom'
+import './FormLogin.css'
 
-export const Login = () => {
+const FormLogin = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [message, setMessage] = useState('')
@@ -51,4 +52,4 @@ export const Login = () => {
       )
     }
     
-    export default Login
+    export default FormLogin

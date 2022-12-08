@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
+import Navbar from '../../components/Navbar/Navbar'
 
-import '../MyTraining/MyTraining.css'
+import './Training.css'
 
-const Mytraining = () => {
+const training = () => {
     return (
     <div>
     <Navbar />
@@ -15,4 +15,4 @@ const Mytraining = () => {
  )
 }
 
-export default Mytraining
+export default training

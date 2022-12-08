@@ -32,3 +32,5 @@ export const ExercisesList = () => {
         </div>
     )
 }
+
+export default ExercisesList

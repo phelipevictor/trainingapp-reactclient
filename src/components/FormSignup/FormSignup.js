@@ -1,6 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
+import api from '../../service/api.service'
+import { useNavigate } from 'react-router-dom'
+import './FormSignup.css'
 
-const Signup = () => {
+const FormSignup = () => {
+    const [username, setUsername] = useState ('')
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+    const [message, setMessage] = useState('')
+
+    const navigate = useNavigate()
+    
   return (
     <div id="form">
   <h2>Signup</h2>
@@ -29,4 +39,4 @@ const Signup = () => {
   )
 }
 
-export default Signup
+export default FormSignup
