@@ -1,0 +1,13 @@
+nav {
+    background-color: silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+a {
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+}

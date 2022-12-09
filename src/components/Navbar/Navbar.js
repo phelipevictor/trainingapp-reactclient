@@ -8,7 +8,8 @@ const Navbar = () => {
         <a href='/About'>About</a>
         <a href='/Signup'>Signup</a>
         <a href='/Login'>Login</a>
-        <a href='/Mytraining'>MyTraining</a>
+        <a href='/exercise'>Exercises</a>
+        <a href='/training'>Trainings</a>
     </nav>
   )
 }
