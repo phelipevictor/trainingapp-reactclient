@@ -30,6 +30,7 @@ const FormLogin = () => {
 
       return (
         <div>
+        <h2>Login</h2>
           {message !== '' && <p>{message}</p>}
           <form onSubmit={handleSubmit}>
             <label>Email: </label>

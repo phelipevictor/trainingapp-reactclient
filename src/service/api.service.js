@@ -3,7 +3,7 @@ import axios from 'axios'
 class Api {
     construtor() {
         this.api = axios.create({
-            baseUrl:'http://localhost:5005/'
+            baseURL:'http://localhost:5005/'
         })
 
         this.api.interceptors.request.use((config) => {
@@ -56,7 +56,7 @@ class Api {
         }
     }
 
-    getTraining = async (trainingId) => {
+    getTrainings = async () => {
         try {
             const { data } = await this.api.get(`/training`)
             return data

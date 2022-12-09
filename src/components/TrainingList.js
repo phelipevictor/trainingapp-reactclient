@@ -2,7 +2,7 @@ import api from '../service/api.service'
 import React, { useState, useEffect } from 'react'
 
 export const TrainingsList = () => {
-    const [trainings, setTraining] = useState([])
+    const [trainings, setTrainings] = useState([])
 
 //const addOneTraining
 
@@ -31,3 +31,5 @@ export const TrainingsList = () => {
         </div>
     )
 }
+
+export default TrainingsList
