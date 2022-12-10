@@ -12,21 +12,22 @@ const FormLogin = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-
         try {
-            await api.login({ email, password })
-            navigate('/exercises')
+            await api.login({email, password})
+            navigate('/exercise')
         } catch (error) {
-            showMessage(`${error.toUpperCase()}!!!`)
+            console.log(error)
         }
+        setEmail('')
+        setPassword('')
     }
 
     const showMessage = (message) => {
-        setMessage(message)
-        setTimeout(() => {
-          setMessage('')
-        }, 3000)
-      }
+      setMessage(message)
+      setTimeout(() => {
+        setMessage('')
+      }, 3000)
+    }
 
       return (
         <div>
@@ -52,5 +53,5 @@ const FormLogin = () => {
         </div>
       )
     }
-    
+
     export default FormLogin

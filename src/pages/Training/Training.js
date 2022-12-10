@@ -4,7 +4,7 @@ import TrainingList from '../../components/TrainingList'
 
 import './Training.css'
 
-const training = () => {
+const Training = () => {
     return (
     <div>
     <Navbar />
@@ -19,4 +19,4 @@ const training = () => {
  )
 }
 
-export default training
+export default Training

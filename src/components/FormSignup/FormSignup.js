@@ -7,36 +7,51 @@ const FormSignup = () => {
     const [username, setUsername] = useState ('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const [message, setMessage] = useState('')
 
     const navigate = useNavigate()
+
+    const handleSubmit = async (e) => {
+      e.preventDefault()
+      try {
+        const user = await api.signup({username, email, password})
+        navigate('/login')
+      } catch (error) {
+        console.log(error)
+      }
+      setEmail('')
+      setPassword('')
+      setUsername('')
+    }
     
-  return (
-    <div id="form">
-  <h2>Signup</h2>
-  <form action="/signup" method="POST">
- 
-    <label>Username: </label>
-      <input type='text' 
-      name='username'
-      value={username} 
-      />
-    <label>Email: </label>
-      <input 
-      type='email' 
-      name='email' 
-      value={email} 
-      />
-    <label>Password: </label>
-      <input 
-      type='password' 
-      name='password' 
-      value={password}
-      />
-    <button type='submit'>Create account</button>
-  </form>
-</div>
-  )
-}
+    return (
+      <form onSubmit={handleSubmit} >
+        <input 
+              type="text" 
+              name='text' 
+              placeholder='Username' 
+              required
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+          />
+          <input 
+              type="email" 
+              name='email' 
+              placeholder='E-mail' 
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+          />
+          <input 
+              type="password" 
+              name='password' 
+              placeholder='Password'
+              required
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+          />
+          <button type='submit'>Signup</button>
+      </form>
+    )
+  }
 
 export default FormSignup
