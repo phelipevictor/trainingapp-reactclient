@@ -1,0 +1,42 @@
+.about {
+    font-family:'Open Sans Condensed', sans-serif;
+    height:100%; 
+    width:100%;
+    background-color:black;
+    margin: -21px 0 0 0;
+    color:white; 
+}
+
+.about h1 {
+    padding-top: 15px;
+}
+
+.about ol, li {
+    text-align: left;
+}
+
+.mental-title {
+    font-size: 30px;
+    padding: 20px;
+}
+
+.mental-list li{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0px;
+}
+
+.physical-title {
+    font-size: 30px;
+    padding: 20px;
+}
+
+.physical-list li{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0px;
+}
+
+.last {
+    margin-bottom: -15px;
+}

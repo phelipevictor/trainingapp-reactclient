@@ -8,7 +8,7 @@ const Training = () => {
     return (
     <div>
     <Navbar />
-    <div>
+    <div class='training'>
         <h1>Ready Training Plans for all</h1> 
         <p>Here you will find sample training plans, already made for all</p>
         <TrainingList />
