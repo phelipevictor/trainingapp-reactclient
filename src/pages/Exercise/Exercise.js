@@ -9,7 +9,7 @@ const Exercise = () => {
     <Navbar />
     <div>
         <h1>Exercises</h1>
-        <p>Here you will find all exercises registered in the App and able for you to choose</p>
+        <p>Here you will find all exercises registered in the App divided by muscular groups. You will see a description on how to perform the exercise, an image and a youtube video example</p>
         <div>
         
         </div>

@@ -29,29 +29,37 @@ const FormLogin = () => {
       }, 3000)
     }
 
-      return (
-        <div>
-        <h2>Login</h2>
-          {message !== '' && <p>{message}</p>}
-          <form onSubmit={handleSubmit}>
-            <label>Email: </label>
-            <input
-              type='text'
-              name='email'
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <label>Password: </label>
-            <input
-              type='password'
-              name='password'
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            <button type='submit'>Login</button>
-          </form>
-        </div>
-      )
+    return (
+      <div id="login-form">
+      <div class='fieldset'>
+        <legend>Lets Train?!</legend>
+        {message !== '' && <p>{message}</p>}
+          <form onSubmit={handleSubmit} >
+              <div class='row'>
+              <label for='email'></label>
+              <input 
+                  type='email'
+                  name='email'
+                  placeholder='Email'
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+              />
+              </div>
+              <div class='row'>
+              <label for='password'></label> 
+              <input 
+                  type='password'
+                  name='password'
+                  placeholder='Password'
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+              />
+      </div>
+          <input type="submit" value="Login"/>
+        </form>
+      </div>
+    </div>
+        )
     }
 
     export default FormLogin

@@ -24,33 +24,47 @@ const FormSignup = () => {
     }
     
     return (
+  <div id="registration-form">
+	<div class='fieldset'>
+    <legend>Lets Train?!</legend>
       <form onSubmit={handleSubmit} >
+      <div class='row'>
+      <label for='username'></label>
         <input 
               type="text" 
-              name='text' 
+              name='text'
               placeholder='Username' 
               required
               value={username}
               onChange={(e) => setUsername(e.target.value)}
           />
+          </div>
+          <div class='row'>
+          <label fo r='email'></label>
           <input 
               type="email" 
-              name='email' 
-              placeholder='E-mail' 
+              name='email'
+              placeholder='Email' 
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
           />
+          </div>
+          <div class='row'>
+          <label for='password'></label> 
           <input 
               type="password" 
-              name='password' 
-              placeholder='Password'
+              name='password'
+              placeholder='Password' 
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
           />
-          <button type='submit'>Signup</button>
-      </form>
+	</div>
+			<input type="submit" value="Signup"/>
+		</form>
+	</div>
+</div>
     )
   }
 
