@@ -34,9 +34,10 @@ const deleteOneExercise = async (_exerciseid) => {
     }, [])
     return (
     <div>
-    <h1>Exercises List</h1>
+    <h1>Exercises List By Muscular Group:</h1>
         {exercises.map((exercise) => (
-        <h1 key={exercise._id}> {exercise.name}</h1>
+        
+        <h3> {exercise.muscularGroup} </h3>
             ))}
         </div>
     )
