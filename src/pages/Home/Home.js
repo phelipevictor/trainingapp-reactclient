@@ -8,10 +8,12 @@ const Home = () => {
     <div>
     <Navbar />
     <div>
-        <h1>Welcome to the Training Aplication</h1>
+        <h1>Welcome to the Workout Aplication</h1>
         <h3>Please create an account to use our application</h3>
+        <div class='links'>
         <a href="/Signup"> Click here to Sign-up!</a>
-        <a href="/Login"> Or click here to Login-in if you already have an account!</a>
+        <a href="/Login"> Click here to Login-in!</a>
+        </div>
     </div>
     </div>
  )
