@@ -1,5 +1,7 @@
-import api from '../service/api.service'
+import api from '../../service/api.service'
 import React, { useState, useEffect } from 'react'
+
+import './TrainingList.css'
 
 export const TrainingsList = ({ name, group, description, exerciseTraining, type, level}) => {
     const [trainings, setTrainings] = useState([])
@@ -37,9 +39,15 @@ const deleteOneTraining = async (_trainingid) => {
     }, [])
     return (
     <div>
-    <h1>Training List</h1>
+    <h1 class='title'>Training List</h1>
         {trainings.map((training) => (
-        <h1 key={training._id}> {training.name}</h1>
+        <div key={training._id}>
+        <h1>Name: {training.name}</h1>
+        <h2>Group: {training.group}</h2>
+        <h3>Description: {training.description}</h3>
+        <p>{training.exercises}</p>
+        <p>Level: {training.level}</p>
+        </div>
             ))}
         </div>
     )

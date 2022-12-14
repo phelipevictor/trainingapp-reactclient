@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 
 export const ExercisesList = ({ name, muscularGroup, type, description, imageUrl, youtubeUrl }) => {
     const [exercises, setExercises] = useState([])
+    const [muscularGroups, setMuscularGroups] = useState([])
 
 
 //const getAllExercises
@@ -11,6 +12,9 @@ const getMyAllExercises = async () => {
     try {
         const data = await api.getExercises();
         setExercises(data)
+        const muscular = new Set()
+        data.forEach( exercise => {muscular.add(exercise.muscularGroup)} )
+        setMuscularGroups(Array.from(muscular))
     } catch (error) {
         console.log(error, `Error to get my all Exercises`)
     }
@@ -28,16 +32,14 @@ const deleteOneExercise = async (_exerciseid) => {
 }
 
     useEffect(() => {
-        api.getExercises('Deadlift').then(result => {
-            setExercises(result)
-        })
+        getMyAllExercises()
     }, [])
     return (
     <div>
     <h1>Exercises List By Muscular Group:</h1>
-        {exercises.map((exercise) => (
+        {muscularGroups.map((muscularGroup) => (
         
-        <h3> {exercise.muscularGroup} </h3>
+        <h3> {muscularGroup} </h3>
             ))}
         </div>
     )
