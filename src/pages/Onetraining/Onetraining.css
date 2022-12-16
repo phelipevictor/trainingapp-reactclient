@@ -30,3 +30,16 @@
     font-size: 20px;
     padding: 0px 0px 10px 20px;
 }
+
+.one-exercise-image {
+    align-items: left;
+    font-size: 15px;
+    color: #E1AD01;
+    justify-content: left;
+}
+
+.one-exercise-youtube {
+    text-align: left;
+    font-size: 15px;
+    color: red;
+}

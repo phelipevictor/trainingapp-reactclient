@@ -64,8 +64,12 @@ export const ExercisesList = ({
                   <h4 className='exercise-name'> {exercise.name} </h4>
                   <p className='exercise-type'> Type: {exercise.type} </p>
                   <p className='exercise-description'> Description: {exercise.description} </p>
-                  <p className='exercise-image'> Image Guide: {exercise.imageUrl} </p>
-                  <p className='exercise-video'> Youtube Guide: {exercise.youtubeUrl} </p>
+                  <div>
+                  <a href={exercise.imageUrl} className='exercise-image'> Image Guide: {exercise.imageUrl} </a>
+                  </div>
+                  <div>
+                  <a href={exercise.youtubeUrl} className='exercise-video'> Youtube Guide: {exercise.youtubeUrl} </a>
+                </div>
                 </div>
               );
             })}

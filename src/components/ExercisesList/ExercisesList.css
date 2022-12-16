@@ -32,11 +32,14 @@
 }
 
 .exercise-image {
-    text-align: left;
+    align-items: left;
     font-size: 15px;
+    color: #E1AD01;
+    justify-content: left;
 }
 
 .exercise-video {
     text-align: left;
     font-size: 15px;
+    color: red;
 }
