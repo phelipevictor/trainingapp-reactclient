@@ -13,7 +13,7 @@ function App() {
     <div className='App'>
     <Routes> 
       <Route path='/' element={<Home />} />
-      <Route path='https://creepy-ray-belt.cyclic.app//signup' element={<Signup />} />
+      <Route path='https://creepy-ray-belt.cyclic.app/signup' element={<Signup />} />
       <Route path='/login' element={<Login />} />
       <Route path='/exercise' element={<Exercise />} />
       <Route path='/training' element={<Training />} />
