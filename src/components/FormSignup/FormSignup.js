@@ -13,7 +13,7 @@ const FormSignup = () => {
     const handleSubmit = async (e) => {
       e.preventDefault()
       try {
-        const user = await api.signup({username, email, password})
+        await api.signup({username, email, password})
         navigate('/login')
       } catch (error) {
         console.log(error)
