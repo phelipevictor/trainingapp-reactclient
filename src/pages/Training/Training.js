@@ -8,7 +8,7 @@ const Training = () => {
     return (
     <div>
     <Navbar />
-    <div class='training'>
+    <div className='training'>
         <TrainingList />
     </div>
     </div>

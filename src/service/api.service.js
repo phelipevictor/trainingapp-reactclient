@@ -49,22 +49,22 @@ class Api {
     }
 
     //adicionar exercicio
-    addExercise = async (name) => {
-        try {
-            const { data } = await this.api.post('/exercise', {name})
-        } catch (error) {
-            console.log(error, `Could not add a new exercise`)
-        }
-    }
+    //addExercise = async (name) => {
+        //try {
+           // const { data } = await this.api.post('/exercise', {name})
+        //} catch (error) {
+          //  console.log(error, `Could not add a new exercise`)
+       // }
+   // }
 
     //adicionar training
-    addTraining = async (name) => {
-        try {
-            const { data } = await this.api.post('/training', {name})
-        } catch (error) {
-            console.log(error, `Could not add a new training`)
-        }
-    }
+    //addTraining = async (name) => {
+       // try {
+         //   const { data } = await this.api.post('/training', {name})
+     //   } catch (error) {
+       //     console.log(error, `Could not add a new training`)
+    //    }
+  //  }
 
 
     //get all exercise

@@ -6,7 +6,7 @@ import '../Signup/Signup.css'
 
 const Signup = () => {
     return (
-    <div class='signup'>
+    <div className='signup'>
     <Navbar />
     <div>
     <FormSignup />

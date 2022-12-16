@@ -1,3 +1,48 @@
 .title {
     font-size: 40px;
 }
+
+.training-name {
+    text-align: left;
+    font-size: 30px;
+}
+
+.training-group {
+    text-align: left;
+    font-size: 20px;
+}
+
+.training-description {
+    text-align: left;
+    justify-content: left;
+}
+
+.training-level {
+    text-align: left;
+    font-size: 20px;
+}
+
+.horizontal-line {
+    display: inline-table;
+    padding: 20px;
+    margin: 5px;
+    width: 95vw;
+    border: 1px solid #E1AD01;
+}
+
+.button {
+    font-family:'Open Sans Condensed', sans-serif;
+    outline:none;
+      box-sizing: border-box;
+      width: 25%;
+      background-color: black;
+      padding: 10px;
+      color: white;
+      border: 1px solid;
+      border-radius: 6px;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-top: 5px;
+      cursor: pointer;
+      position:relative;
+}

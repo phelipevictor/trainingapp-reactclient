@@ -6,7 +6,7 @@ import './FormLogin.css'
 const FormLogin = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const [message, setMessage] = useState('')
+    //const [message, setMessage] = useState('')
 
     const navigate = useNavigate()
 
@@ -22,20 +22,19 @@ const FormLogin = () => {
         setPassword('')
     }
 
-    const showMessage = (message) => {
-      setMessage(message)
-      setTimeout(() => {
-        setMessage('')
-      }, 3000)
-    }
+    //const showMessage = (message) => {
+      //setMessage(message)
+      //setTimeout(() => {
+       // setMessage('')
+     // }, 3000)
+   // }
 
     return (
       <div id="login-form">
-      <div class='fieldset'>
+      <div className='fieldset'>
         <legend>Lets Train?!</legend>
-        {message !== '' && <p>{message}</p>}
           <form onSubmit={handleSubmit} >
-              <div class='row'>
+              <div className='row'>
               <label for='email'></label>
               <input 
                   type='email'
@@ -45,7 +44,7 @@ const FormLogin = () => {
                   onChange={(e) => setEmail(e.target.value)}
               />
               </div>
-              <div class='row'>
+              <div className='row'>
               <label for='password'></label> 
               <input 
                   type='password'

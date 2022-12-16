@@ -1,0 +1,32 @@
+.one-training {
+    font-family:'Open Sans Condensed', sans-serif;
+    height:100%; 
+    width:100%;
+    background-color:black;
+    margin: -20px 0 0 0;
+    width: 100%;
+    color: white;
+}
+
+.one-training-name {
+    font-size: 30px;
+    padding: 20px 0px 0px 20px;
+}
+
+.one-training-group {
+    text-align: left;
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.one-exercise-name {
+    text-align: left;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.one-exercise-description {
+    text-align: left;
+    font-size: 20px;
+    padding: 0px 0px 10px 20px;
+}

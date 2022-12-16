@@ -6,7 +6,7 @@ import '../Login/Login.css'
 
 const Login = () => {
     return (
-    <div class='login'>
+    <div className='login'>
     <Navbar />
     <div>
     <FormLogin />

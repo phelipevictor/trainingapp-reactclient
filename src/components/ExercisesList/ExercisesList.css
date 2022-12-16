@@ -1,0 +1,42 @@
+.title {
+    margin: 10px;
+    padding: 20px;
+}
+
+.horizontal-line {
+    display: inline-table;
+    width: 95vw;
+    border: 1px solid #E1AD01;
+}
+
+.muscular-group {
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+.exercise-name {
+    text-align: left;
+    font-size: 25px;
+}
+
+.exercise-type {
+    text-align: left;
+    font-size: 15px;
+    margin-top: -20px;
+}
+
+.exercise-description {
+    text-align: left;
+    font-size: 15px;
+    justify-content: left;
+}
+
+.exercise-image {
+    text-align: left;
+    font-size: 15px;
+}
+
+.exercise-video {
+    text-align: left;
+    font-size: 15px;
+}

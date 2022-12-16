@@ -28,7 +28,7 @@ const FormSignup = () => {
 	<div class='fieldset'>
     <legend>Lets Train?!</legend>
       <form onSubmit={handleSubmit} >
-      <div class='row'>
+      <div className='row'>
       <label for='username'></label>
         <input 
               type="text" 
@@ -39,8 +39,8 @@ const FormSignup = () => {
               onChange={(e) => setUsername(e.target.value)}
           />
           </div>
-          <div class='row'>
-          <label fo r='email'></label>
+          <div className='row'>
+          <label for='email'></label>
           <input 
               type="email" 
               name='email'
@@ -50,7 +50,7 @@ const FormSignup = () => {
               onChange={(e) => setEmail(e.target.value)}
           />
           </div>
-          <div class='row'>
+          <div className='row'>
           <label for='password'></label> 
           <input 
               type="password" 
