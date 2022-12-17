@@ -60,7 +60,7 @@ export const ExercisesList = ({
             <h3 className='muscular-group'> {muscularGroup} </h3>
             {getexercisebymusculargroup(muscularGroup).map((exercise) => {
               return (
-                <div key={exercise._id}>
+                <div className='exercises-border' key={exercise._id}>
                   <h4 className='exercise-name'> {exercise.name} </h4>
                   <p className='exercise-type'> Type: {exercise.type} </p>
                   <p className='exercise-description'> Description: {exercise.description} </p>

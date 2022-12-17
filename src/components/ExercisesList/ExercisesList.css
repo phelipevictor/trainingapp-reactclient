@@ -43,3 +43,8 @@
     font-size: 15px;
     color: red;
 }
+
+.exercises-border {
+    border: 1px solid #E1AD01;
+    padding: 20px;
+}

@@ -43,3 +43,14 @@
     font-size: 15px;
     color: red;
 }
+
+.horizontal-line {
+    display: inline-table;
+    width: 95vw;
+    border: 1px solid #E1AD01;
+}
+
+.exercises-border {
+    border: 1px solid #E1AD01;
+    padding: 20px 0px;
+}

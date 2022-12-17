@@ -23,11 +23,12 @@ export const Onetraining = () => {
         <div className='one-training' key={onetraining._id}>
         <h1 className='one-training-name'> {onetraining.name}</h1>
         {/* {loading ? <h1> Loading ...</h1>:(         */}
-          <div>
+          <div className='horizontal-line'>
           {onetraining.exercises?.sort((a, b) => a.type-b.type).map((exercise) => {
           return (
             <div key={exercise._id}>
             <h1>{exercise.type}</h1>
+            <div className="exercises-border">
             <h4 className='one-exercise-name'> Exercise: {exercise.exerciseId.name}</h4>
             <p className='one-exercise-description'> Description: {exercise.exerciseId.description}</p>
             <div>
@@ -35,6 +36,7 @@ export const Onetraining = () => {
             </div>
             <div>
             <a href={exercise.exerciseId.youtubeUrl} className='one-exercise-youtube'> Youtube Guide: {exercise.exerciseId.youtubeUrl}</a>
+            </div>
             </div>
             </div>
           )
