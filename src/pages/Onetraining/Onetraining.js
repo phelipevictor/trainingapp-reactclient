@@ -7,13 +7,11 @@ import './Onetraining.css'
 
 export const Onetraining = () => {
     const [onetraining, setOneTraining] = useState([])
-    // const [loading, setLoading] = useState([true])
     const { trainingId } = useParams()
 
     useEffect(() => {
         api.getTraining(trainingId).then(result => {
             setOneTraining(result)
-            // setLoading(false)
         })
     })
 
@@ -22,7 +20,6 @@ export const Onetraining = () => {
         <Navbar />
         <div className='one-training' key={onetraining._id}>
         <h1 className='one-training-name'> {onetraining.name}</h1>
-        {/* {loading ? <h1> Loading ...</h1>:(         */}
           <div className='horizontal-line'>
           {onetraining.exercises?.sort((a, b) => a.type-b.type).map((exercise) => {
           return (

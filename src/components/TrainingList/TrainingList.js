@@ -7,31 +7,7 @@ import './TrainingList.css'
 export const TrainingsList = ({ name, group, description, exerciseTraining, type, level }) => {
     const [trainings, setTrainings] = useState([])
 
-
-//const getAllTraining
-
-//const getMyAllTraining = async () => {
-    //try {
-       // const data = await api.getTrainings();
-       // setTrainings(data)
-  //  } catch (error) {
-       // console.log(error, `Error to get my all Trainings`)
- //   }
-//}
-
-//const deleteOneTraining
-
-//const deleteOneTraining = async (_trainingid) => {
-  //  try {
-   //     await api.deleteTraining(_trainingid)
-    //    await api.getMyAllTrainings()
-  //  } catch (error) {
-     //   console.error(error, `Error to delete this Traning`)
-  // }
-//}
-
-//const updateOneTraining
-
+    
 
     useEffect(() => {
         api.getTrainings('AB').then(result => {

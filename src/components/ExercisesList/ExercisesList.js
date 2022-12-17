@@ -14,8 +14,6 @@ export const ExercisesList = ({
   const [exercises, setExercises] = useState([]);
   const [muscularGroups, setMuscularGroups] = useState([]);
 
-  //const getAllExercises
-
   const getMyAllExercises = async () => {
     try {
       const data = await api.getExercises();
@@ -29,17 +27,6 @@ export const ExercisesList = ({
       console.log(error, `Error to get my all Exercises Muscular Groups`);
     }
   };
-
-  //const deleteOneExercise
-
-  //const deleteOneExercise = async (_exerciseid) => {
-  //try {
-  //await api.deleteExercise(_exerciseid)
-  // await api.getMyAllExercises()
-  // } catch (error) {
-  //  console.error(error, `Error to delete this Exercise`)
-  // }
-  //}
 
   const getexercisebymusculargroup = (muscularGroup) => {
     return exercises.filter((exercise) => {
