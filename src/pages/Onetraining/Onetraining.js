@@ -7,11 +7,13 @@ import './Onetraining.css'
 
 export const Onetraining = () => {
     const [onetraining, setOneTraining] = useState([])
+    // const [loading, setLoading] = useState([true])
     const { trainingId } = useParams()
 
     useEffect(() => {
         api.getTraining(trainingId).then(result => {
             setOneTraining(result)
+            // setLoading(false)
         })
     })
 
@@ -20,10 +22,12 @@ export const Onetraining = () => {
         <Navbar />
         <div className='one-training' key={onetraining._id}>
         <h1 className='one-training-name'> {onetraining.name}</h1>
-        <h4 className='one-training-group'>Group: {onetraining.group}</h4>
-        {onetraining.exercises?.map((exercise) => {
+        {/* {loading ? <h1> Loading ...</h1>:(         */}
+          <div>
+          {onetraining.exercises?.sort((a, b) => a.type-b.type).map((exercise) => {
           return (
             <div key={exercise._id}>
+            <h1>{exercise.type}</h1>
             <h4 className='one-exercise-name'> Exercise: {exercise.exerciseId.name}</h4>
             <p className='one-exercise-description'> Description: {exercise.exerciseId.description}</p>
             <div>
@@ -36,6 +40,8 @@ export const Onetraining = () => {
           )
         }
         )}
+        </div>
+        {/* )} */}
         </div>
         </div>
     )

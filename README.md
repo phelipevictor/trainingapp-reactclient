@@ -22,7 +22,7 @@ Hompage / About / Signup / Login / Exercises / Trainings / Training
 
 It was used HTML, CSS and JavaScript languages within React; and Crud Methods within API.
 
-## Approach
+### Approach
 
 I used yellow, black and white colors in the design of the application, because it fits better with GYM theme.
 
